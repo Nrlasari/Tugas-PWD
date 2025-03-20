@@ -1,0 +1,219 @@
+/* Reset CSS */
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Header seperti Tokopedia */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+}
+
+.header .search-bar {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.header .search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 180px; /* Sesuaikan tinggi dengan kebutuhan */
+    background: #f8d7da; /* Warna merah muda seperti di gambar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.banner-content {
+    max-width: 800px;
+}
+
+.banner h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c62828; /* Warna teks lebih gelap */
+}
+
+.banner p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .banner {
+        height: 140px;
+    }
+
+    .banner h2 {
+        font-size: 20px;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+    text-align: left;
+    font-size: small;
+    text-decoration: none;
+}
+
+/* Grid kategori */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Box Kategori */
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background: white;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Kolom Footer */
+.footer-section {
+    flex: 1;
+    min-width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-section.bantuan {
+    flex: 2;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #0073e6;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Download Buttons */
+.download-buttons {
+    margin-top: 10px;
+}
+
+.download-buttons img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-section {
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .download-buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
+
